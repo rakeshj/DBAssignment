@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF1031CA272438F90067213E /* DBTradeModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1031C8272438F90067213E /* DBTradeModel+CoreDataClass.swift */; };
+		CF1031CB272438F90067213E /* DBTradeModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1031C9272438F90067213E /* DBTradeModel+CoreDataProperties.swift */; };
+		CF1031D62724FCDF0067213E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1031D52724FCDF0067213E /* Constants.swift */; };
+		CF1031DB2724FD2A0067213E /* AddRecordViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1031DA2724FD2A0067213E /* AddRecordViewModelProtocol.swift */; };
+		CF1031E02724FDF10067213E /* Date+StripTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1031DF2724FDF10067213E /* Date+StripTime.swift */; };
+		CF1031E52725145A0067213E /* UITextField+DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1031E42725145A0067213E /* UITextField+DatePicker.swift */; };
+		CF10320327251E0A0067213E /* DBAddRecordViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10320227251E0A0067213E /* DBAddRecordViewModelTest.swift */; };
+		CF10320B27256BC20067213E /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10320A27256BC20067213E /* HomeViewModelTest.swift */; };
+		CFCF8C9D27207DB20094BD5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8C9C27207DB20094BD5C /* AppDelegate.swift */; };
+		CFCF8C9F27207DB20094BD5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8C9E27207DB20094BD5C /* SceneDelegate.swift */; };
+		CFCF8CA427207DB20094BD5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCF8CA227207DB20094BD5C /* Main.storyboard */; };
+		CFCF8CA727207DB20094BD5C /* DBTradeStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8CA527207DB20094BD5C /* DBTradeStore.xcdatamodeld */; };
+		CFCF8CA927207DB40094BD5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCF8CA827207DB40094BD5C /* Assets.xcassets */; };
+		CFCF8CAC27207DB40094BD5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCF8CAA27207DB40094BD5C /* LaunchScreen.storyboard */; };
+		CFCF8CB727207DB50094BD5C /* DBTradeStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8CB627207DB50094BD5C /* DBTradeStoreTests.swift */; };
+		CFCF8CC227207DB50094BD5C /* DBTradeStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8CC127207DB50094BD5C /* DBTradeStoreUITests.swift */; };
+		CFCF8CD327207EB50094BD5C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8CD227207EB50094BD5C /* HomeTableViewController.swift */; };
+		CFCF8CDB27209D770094BD5C /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8CDA27209D770094BD5C /* AddRecordViewController.swift */; };
+		CFCF8CF0272141B10094BD5C /* DBStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8CEF272141B10094BD5C /* DBStoreManager.swift */; };
+		CFCF8CF527215EB30094BD5C /* AddRecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8CF427215EB30094BD5C /* AddRecordViewModel.swift */; };
+		CFCF8D252721C9860094BD5C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8D242721C9860094BD5C /* HomeViewModel.swift */; };
+		CFCF8D342721D2AE0094BD5C /* DBTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8D332721D2AE0094BD5C /* DBTestViewController.swift */; };
+		CFCF8D3A2721FAF70094BD5C /* TradeModelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8D392721FAF70094BD5C /* TradeModelTableViewCell.swift */; };
+		CFCF8D3B2721FAF70094BD5C /* TradeModelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8D392721FAF70094BD5C /* TradeModelTableViewCell.swift */; };
+		CFCF8D5F272290640094BD5C /* DBTradeStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8CA527207DB20094BD5C /* DBTradeStore.xcdatamodeld */; };
+		CFCF8DA32722A0240094BD5C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCF8DA22722A0240094BD5C /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CFCF8DAF2722A1640094BD5C /* DBStoreManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF8DAE2722A1640094BD5C /* DBStoreManagerTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFCF8CB327207DB50094BD5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFCF8C9127207DB20094BD5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFCF8C9827207DB20094BD5C;
+			remoteInfo = DBTradeStore;
+		};
+		CFCF8CBE27207DB50094BD5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFCF8C9127207DB20094BD5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFCF8C9827207DB20094BD5C;
+			remoteInfo = DBTradeStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF1031C8272438F90067213E /* DBTradeModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBTradeModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CF1031C9272438F90067213E /* DBTradeModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBTradeModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CF1031D52724FCDF0067213E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CF1031DA2724FD2A0067213E /* AddRecordViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordViewModelProtocol.swift; sourceTree = "<group>"; };
+		CF1031DF2724FDF10067213E /* Date+StripTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+StripTime.swift"; sourceTree = "<group>"; };
+		CF1031E42725145A0067213E /* UITextField+DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+DatePicker.swift"; sourceTree = "<group>"; };
+		CF10320227251E0A0067213E /* DBAddRecordViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBAddRecordViewModelTest.swift; sourceTree = "<group>"; };
+		CF10320A27256BC20067213E /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		CFCF8C9927207DB20094BD5C /* DBTradeStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBTradeStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFCF8C9C27207DB20094BD5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFCF8C9E27207DB20094BD5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CFCF8CA327207DB20094BD5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFCF8CA627207DB20094BD5C /* DBTradeStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DBTradeStore.xcdatamodel; sourceTree = "<group>"; };
+		CFCF8CA827207DB40094BD5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFCF8CAB27207DB40094BD5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFCF8CAD27207DB40094BD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCF8CB227207DB50094BD5C /* DBTradeStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBTradeStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFCF8CB627207DB50094BD5C /* DBTradeStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBTradeStoreTests.swift; sourceTree = "<group>"; };
+		CFCF8CB827207DB50094BD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCF8CBD27207DB50094BD5C /* DBTradeStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBTradeStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFCF8CC127207DB50094BD5C /* DBTradeStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBTradeStoreUITests.swift; sourceTree = "<group>"; };
+		CFCF8CC327207DB50094BD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCF8CD227207EB50094BD5C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		CFCF8CDA27209D770094BD5C /* AddRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
+		CFCF8CEF272141B10094BD5C /* DBStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBStoreManager.swift; sourceTree = "<group>"; };
+		CFCF8CF427215EB30094BD5C /* AddRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordViewModel.swift; sourceTree = "<group>"; };
+		CFCF8D242721C9860094BD5C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CFCF8D332721D2AE0094BD5C /* DBTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBTestViewController.swift; sourceTree = "<group>"; };
+		CFCF8D392721FAF70094BD5C /* TradeModelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeModelTableViewCell.swift; sourceTree = "<group>"; };
+		CFCF8DA22722A0240094BD5C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CFCF8DAE2722A1640094BD5C /* DBStoreManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBStoreManagerTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFCF8C9627207DB20094BD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCF8DA32722A0240094BD5C /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCF8CAF27207DB50094BD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCF8CBA27207DB50094BD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF1031EC272515EC0067213E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF8CD227207EB50094BD5C /* HomeTableViewController.swift */,
+				CFCF8CDA27209D770094BD5C /* AddRecordViewController.swift */,
+				CFCF8D332721D2AE0094BD5C /* DBTestViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CF1031F0272516080067213E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF8D392721FAF70094BD5C /* TradeModelTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFCF8C9027207DB20094BD5C = {
+			isa = PBXGroup;
+			children = (
+				CF1031C8272438F90067213E /* DBTradeModel+CoreDataClass.swift */,
+				CF1031C9272438F90067213E /* DBTradeModel+CoreDataProperties.swift */,
+				CFCF8C9B27207DB20094BD5C /* DBTradeStore */,
+				CFCF8CB527207DB50094BD5C /* DBTradeStoreTests */,
+				CFCF8CC027207DB50094BD5C /* DBTradeStoreUITests */,
+				CFCF8C9A27207DB20094BD5C /* Products */,
+				CFCF8DA12722A0240094BD5C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFCF8C9A27207DB20094BD5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF8C9927207DB20094BD5C /* DBTradeStore.app */,
+				CFCF8CB227207DB50094BD5C /* DBTradeStoreTests.xctest */,
+				CFCF8CBD27207DB50094BD5C /* DBTradeStoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFCF8C9B27207DB20094BD5C /* DBTradeStore */ = {
+			isa = PBXGroup;
+			children = (
+				CF1031F0272516080067213E /* View */,
+				CF1031EC272515EC0067213E /* controller */,
+				CFCF8CEE272141800094BD5C /* Utilities */,
+				CFCF8CED272141550094BD5C /* ViewModel */,
+				CFCF8CE927213E2A0094BD5C /* Model */,
+				CFCF8C9C27207DB20094BD5C /* AppDelegate.swift */,
+				CFCF8C9E27207DB20094BD5C /* SceneDelegate.swift */,
+				CFCF8CA227207DB20094BD5C /* Main.storyboard */,
+				CFCF8CA827207DB40094BD5C /* Assets.xcassets */,
+				CFCF8CAA27207DB40094BD5C /* LaunchScreen.storyboard */,
+				CFCF8CAD27207DB40094BD5C /* Info.plist */,
+				CFCF8CA527207DB20094BD5C /* DBTradeStore.xcdatamodeld */,
+			);
+			path = DBTradeStore;
+			sourceTree = "<group>";
+		};
+		CFCF8CB527207DB50094BD5C /* DBTradeStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF8CB627207DB50094BD5C /* DBTradeStoreTests.swift */,
+				CFCF8CB827207DB50094BD5C /* Info.plist */,
+				CFCF8DAE2722A1640094BD5C /* DBStoreManagerTest.swift */,
+				CF10320227251E0A0067213E /* DBAddRecordViewModelTest.swift */,
+				CF10320A27256BC20067213E /* HomeViewModelTest.swift */,
+			);
+			path = DBTradeStoreTests;
+			sourceTree = "<group>";
+		};
+		CFCF8CC027207DB50094BD5C /* DBTradeStoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF8CC127207DB50094BD5C /* DBTradeStoreUITests.swift */,
+				CFCF8CC327207DB50094BD5C /* Info.plist */,
+			);
+			path = DBTradeStoreUITests;
+			sourceTree = "<group>";
+		};
+		CFCF8CE927213E2A0094BD5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFCF8CED272141550094BD5C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF8CF427215EB30094BD5C /* AddRecordViewModel.swift */,
+				CFCF8D242721C9860094BD5C /* HomeViewModel.swift */,
+				CF1031DA2724FD2A0067213E /* AddRecordViewModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFCF8CEE272141800094BD5C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF8CEF272141B10094BD5C /* DBStoreManager.swift */,
+				CF1031D52724FCDF0067213E /* Constants.swift */,
+				CF1031DF2724FDF10067213E /* Date+StripTime.swift */,
+				CF1031E42725145A0067213E /* UITextField+DatePicker.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CFCF8DA12722A0240094BD5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF8DA22722A0240094BD5C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFCF8C9827207DB20094BD5C /* DBTradeStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFCF8CC627207DB50094BD5C /* Build configuration list for PBXNativeTarget "DBTradeStore" */;
+			buildPhases = (
+				CFCF8C9527207DB20094BD5C /* Sources */,
+				CFCF8C9627207DB20094BD5C /* Frameworks */,
+				CFCF8C9727207DB20094BD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DBTradeStore;
+			productName = DBTradeStore;
+			productReference = CFCF8C9927207DB20094BD5C /* DBTradeStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFCF8CB127207DB50094BD5C /* DBTradeStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFCF8CC927207DB50094BD5C /* Build configuration list for PBXNativeTarget "DBTradeStoreTests" */;
+			buildPhases = (
+				CFCF8CAE27207DB50094BD5C /* Sources */,
+				CFCF8CAF27207DB50094BD5C /* Frameworks */,
+				CFCF8CB027207DB50094BD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFCF8CB427207DB50094BD5C /* PBXTargetDependency */,
+			);
+			name = DBTradeStoreTests;
+			productName = DBTradeStoreTests;
+			productReference = CFCF8CB227207DB50094BD5C /* DBTradeStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFCF8CBC27207DB50094BD5C /* DBTradeStoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFCF8CCC27207DB50094BD5C /* Build configuration list for PBXNativeTarget "DBTradeStoreUITests" */;
+			buildPhases = (
+				CFCF8CB927207DB50094BD5C /* Sources */,
+				CFCF8CBA27207DB50094BD5C /* Frameworks */,
+				CFCF8CBB27207DB50094BD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFCF8CBF27207DB50094BD5C /* PBXTargetDependency */,
+			);
+			name = DBTradeStoreUITests;
+			productName = DBTradeStoreUITests;
+			productReference = CFCF8CBD27207DB50094BD5C /* DBTradeStoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFCF8C9127207DB20094BD5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					CFCF8C9827207DB20094BD5C = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					CFCF8CB127207DB50094BD5C = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = CFCF8C9827207DB20094BD5C;
+					};
+					CFCF8CBC27207DB50094BD5C = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = CFCF8C9827207DB20094BD5C;
+					};
+				};
+			};
+			buildConfigurationList = CFCF8C9427207DB20094BD5C /* Build configuration list for PBXProject "DBTradeStore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFCF8C9027207DB20094BD5C;
+			productRefGroup = CFCF8C9A27207DB20094BD5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFCF8C9827207DB20094BD5C /* DBTradeStore */,
+				CFCF8CB127207DB50094BD5C /* DBTradeStoreTests */,
+				CFCF8CBC27207DB50094BD5C /* DBTradeStoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFCF8C9727207DB20094BD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCF8CAC27207DB40094BD5C /* LaunchScreen.storyboard in Resources */,
+				CFCF8CA927207DB40094BD5C /* Assets.xcassets in Resources */,
+				CFCF8CA427207DB20094BD5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCF8CB027207DB50094BD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCF8CBB27207DB50094BD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFCF8C9527207DB20094BD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCF8D3A2721FAF70094BD5C /* TradeModelTableViewCell.swift in Sources */,
+				CFCF8CA727207DB20094BD5C /* DBTradeStore.xcdatamodeld in Sources */,
+				CF1031DB2724FD2A0067213E /* AddRecordViewModelProtocol.swift in Sources */,
+				CFCF8C9D27207DB20094BD5C /* AppDelegate.swift in Sources */,
+				CFCF8CF527215EB30094BD5C /* AddRecordViewModel.swift in Sources */,
+				CF1031E52725145A0067213E /* UITextField+DatePicker.swift in Sources */,
+				CFCF8D252721C9860094BD5C /* HomeViewModel.swift in Sources */,
+				CFCF8C9F27207DB20094BD5C /* SceneDelegate.swift in Sources */,
+				CF1031CB272438F90067213E /* DBTradeModel+CoreDataProperties.swift in Sources */,
+				CF1031E02724FDF10067213E /* Date+StripTime.swift in Sources */,
+				CF1031D62724FCDF0067213E /* Constants.swift in Sources */,
+				CF1031CA272438F90067213E /* DBTradeModel+CoreDataClass.swift in Sources */,
+				CFCF8CDB27209D770094BD5C /* AddRecordViewController.swift in Sources */,
+				CFCF8D342721D2AE0094BD5C /* DBTestViewController.swift in Sources */,
+				CFCF8CF0272141B10094BD5C /* DBStoreManager.swift in Sources */,
+				CFCF8CD327207EB50094BD5C /* HomeTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCF8CAE27207DB50094BD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCF8D5F272290640094BD5C /* DBTradeStore.xcdatamodeld in Sources */,
+				CFCF8DAF2722A1640094BD5C /* DBStoreManagerTest.swift in Sources */,
+				CF10320327251E0A0067213E /* DBAddRecordViewModelTest.swift in Sources */,
+				CF10320B27256BC20067213E /* HomeViewModelTest.swift in Sources */,
+				CFCF8D3B2721FAF70094BD5C /* TradeModelTableViewCell.swift in Sources */,
+				CFCF8CB727207DB50094BD5C /* DBTradeStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCF8CB927207DB50094BD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCF8CC227207DB50094BD5C /* DBTradeStoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFCF8CB427207DB50094BD5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFCF8C9827207DB20094BD5C /* DBTradeStore */;
+			targetProxy = CFCF8CB327207DB50094BD5C /* PBXContainerItemProxy */;
+		};
+		CFCF8CBF27207DB50094BD5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFCF8C9827207DB20094BD5C /* DBTradeStore */;
+			targetProxy = CFCF8CBE27207DB50094BD5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFCF8CA227207DB20094BD5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFCF8CA327207DB20094BD5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFCF8CAA27207DB40094BD5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFCF8CAB27207DB40094BD5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFCF8CC427207DB50094BD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CFCF8CC527207DB50094BD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFCF8CC727207DB50094BD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FVP8N7K45;
+				INFOPLIST_FILE = DBTradeStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testUIKit.DBTradeStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFCF8CC827207DB50094BD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FVP8N7K45;
+				INFOPLIST_FILE = DBTradeStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testUIKit.DBTradeStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFCF8CCA27207DB50094BD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FVP8N7K45;
+				INFOPLIST_FILE = DBTradeStoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testUIKit.DBTradeStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DBTradeStore.app/DBTradeStore";
+			};
+			name = Debug;
+		};
+		CFCF8CCB27207DB50094BD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FVP8N7K45;
+				INFOPLIST_FILE = DBTradeStoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testUIKit.DBTradeStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DBTradeStore.app/DBTradeStore";
+			};
+			name = Release;
+		};
+		CFCF8CCD27207DB50094BD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FVP8N7K45;
+				INFOPLIST_FILE = DBTradeStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testUIKit.DBTradeStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DBTradeStore;
+			};
+			name = Debug;
+		};
+		CFCF8CCE27207DB50094BD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FVP8N7K45;
+				INFOPLIST_FILE = DBTradeStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testUIKit.DBTradeStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DBTradeStore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFCF8C9427207DB20094BD5C /* Build configuration list for PBXProject "DBTradeStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCF8CC427207DB50094BD5C /* Debug */,
+				CFCF8CC527207DB50094BD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFCF8CC627207DB50094BD5C /* Build configuration list for PBXNativeTarget "DBTradeStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCF8CC727207DB50094BD5C /* Debug */,
+				CFCF8CC827207DB50094BD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFCF8CC927207DB50094BD5C /* Build configuration list for PBXNativeTarget "DBTradeStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCF8CCA27207DB50094BD5C /* Debug */,
+				CFCF8CCB27207DB50094BD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFCF8CCC27207DB50094BD5C /* Build configuration list for PBXNativeTarget "DBTradeStoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCF8CCD27207DB50094BD5C /* Debug */,
+				CFCF8CCE27207DB50094BD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CFCF8CA527207DB20094BD5C /* DBTradeStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CFCF8CA627207DB20094BD5C /* DBTradeStore.xcdatamodel */,
+			);
+			currentVersion = CFCF8CA627207DB20094BD5C /* DBTradeStore.xcdatamodel */;
+			path = DBTradeStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CFCF8C9127207DB20094BD5C /* Project object */;
+}
