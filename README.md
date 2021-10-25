@@ -1,5 +1,5 @@
 # DBAssignment
-Deutsche Bank Trade Assignment
+Trade Assignment
 
 Requirement: Write a program (in your preferred programming language) with all the test cases. TDD approach will be preferred. Time to complete the below assignment is 2 to 3 hrs.
 
